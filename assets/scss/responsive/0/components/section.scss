@@ -1,0 +1,41 @@
+.v-section {
+  display: grid;
+  gap: 36px;
+  justify-content: center;
+  > header {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    > h2 {
+      font-size: 21px;
+    }
+    > p {
+      font-size: 15px;
+    }
+  }
+  &.stacks {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+  }
+  &.projects {
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .projects {
+      max-width: 1024px;
+      margin: auto;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(196px, 240px));
+      gap: 12px;
+      margin-top: 24px;
+      padding: 24px;
+    }
+  }
+}

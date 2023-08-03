@@ -1,0 +1,30 @@
+.v-profile {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+  max-width: 1024px;
+  width: 80vw;
+  margin: auto;
+  > picture {
+    display: grid;
+    place-items: center;
+    & img {
+      width: 196px;
+    }
+  }
+  > h1 {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  > p {
+    font-size: 15px;
+    text-align: center;
+  }
+  > div {
+    display: flex;
+    justify-items: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+}
