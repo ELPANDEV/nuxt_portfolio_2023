@@ -1,0 +1,15 @@
+.v-pager-view {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  opacity: 0;
+  transition: opacity 0.1s, top 0.2s;
+  overflow-y: scroll;
+  &.enabled {
+    opacity: 1;
+    top: 0;
+  }
+}

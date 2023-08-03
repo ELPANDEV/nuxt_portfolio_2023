@@ -28,49 +28,55 @@ import { technologies } from "~/lib/features/technology/data";
       <PagerButton name="Proyectos" />
     </template>
     <template #elements>
-      <Profile />
-      <Section
-        class="stacks"
-        name="Tecnologías"
-        description="Todas estas son las technologías con las que he desarrollado durante toda mi carrera"
-      >
-        <ul>
-          <TechnologyLaravel />
-          <TechnologyNuxt />
-          <TechnologyNode />
-          <TechnologyFlutter />
-        </ul>
-        <ul>
-          <TechnologyPhp />
-          <TechnologyMysql />
-          <TechnologyHtml />
-          <TechnologyScss />
-          <TechnologyCss />
-          <TechnologyJs />
-          <TechnologyTs />
-          <TechnologyDart />
-          <TechnologyFirebase />
-        </ul>
-      </Section>
-      <Section
-        class="projects"
-        name="Proyectos"
-        description="Todas estas son las technologías con la cueles me desenvuelvo bien"
-      >
-        <ul class="filters">
-          <TechnologyLaravel class="animate" :class="{ enabled: filter.technology_id == technologies.laravel.id }" @click="change_technology(technologies.laravel)" />
-          <TechnologyNuxt    class="animate" :class="{ enabled: filter.technology_id == technologies.nuxt.id }"    @click="change_technology(technologies.nuxt)"/>
-          <TechnologyNode    class="animate" :class="{ enabled: filter.technology_id == technologies.node.id }"    @click="change_technology(technologies.node)"/>
-          <TechnologyFlutter class="animate" :class="{ enabled: filter.technology_id == technologies.flutter.id }" @click="change_technology(technologies.flutter)"/>
-        </ul>
-        <ul class="projects">
-          <li v-for="project in projects" :key="project.id">
-            <a :href="project.url" target="_blank">
-              <Project :project="project" />
-            </a>
-          </li>
-        </ul>
-      </Section>
+      <PagerView>
+        <Profile />
+      </PagerView>
+      <PagerView>
+        <Section
+          class="stacks"
+          name="Tecnologías"
+          description="Todas estas son las technologías con las que he desarrollado durante toda mi carrera"
+        >
+          <ul>
+            <TechnologyLaravel />
+            <TechnologyNuxt />
+            <TechnologyNode />
+            <TechnologyFlutter />
+          </ul>
+          <ul>
+            <TechnologyPhp />
+            <TechnologyMysql />
+            <TechnologyHtml />
+            <TechnologyScss />
+            <TechnologyCss />
+            <TechnologyJs />
+            <TechnologyTs />
+            <TechnologyDart />
+            <TechnologyFirebase />
+          </ul>
+        </Section>
+      </PagerView>
+      <PagerView>
+        <Section
+          class="projects"
+          name="Proyectos"
+          description="Todas estas son las technologías con la cueles me desenvuelvo bien"
+        >
+          <ul class="filters">
+            <TechnologyLaravel class="animate" :class="{ enabled: filter.technology_id == technologies.laravel.id }" @click="change_technology(technologies.laravel)" />
+            <TechnologyNuxt    class="animate" :class="{ enabled: filter.technology_id == technologies.nuxt.id }"    @click="change_technology(technologies.nuxt)"/>
+            <TechnologyNode    class="animate" :class="{ enabled: filter.technology_id == technologies.node.id }"    @click="change_technology(technologies.node)"/>
+            <TechnologyFlutter class="animate" :class="{ enabled: filter.technology_id == technologies.flutter.id }" @click="change_technology(technologies.flutter)"/>
+          </ul>
+          <ul class="projects">
+            <li v-for="project in projects" :key="project.id">
+              <a :href="project.url" target="_blank">
+                <Project :project="project" />
+              </a>
+            </li>
+          </ul>
+        </Section>
+      </PagerView>
     </template>
   </Pager>
 </template>
