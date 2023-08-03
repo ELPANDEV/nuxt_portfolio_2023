@@ -4,7 +4,7 @@
 
 <template>
   <li class="v-technology">
-    <img :src="technology.image" :alt="technology.name">
+    <slot />
     {{ technology.name }}
   </li>
 </template>

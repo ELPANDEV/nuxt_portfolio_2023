@@ -5,7 +5,7 @@
 <template>
   <section class="v-profile">
     <picture>
-      <img src="/images/elpandev.png" alt="elpandev">
+      <img src="/images/elpandev.png" alt="elpandev" loading="lazy">
     </picture>
     <h1>Francisco Moncayo</h1>
     <p>Programador autodidacta desde el 2016, más exactamente el 26 de junio del 2016, día en el que registro mi primer videojuego en google play.</p>

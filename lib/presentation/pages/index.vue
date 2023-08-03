@@ -29,11 +29,28 @@
         description="Todas estas son las technologías con las que he desarrollado durante toda mi carrera"
       >
         <ul>
-          <Technology
-            v-for="technology in technologies"
-            :key="technology.id"
-            :technology="technology"
-          />
+          <TechnologyLaravel />
+          <TechnologyNuxt />
+          <TechnologyNode />
+          <TechnologyFlutter />
+        </ul>
+        <ul>
+          <TechnologyLaravel />
+          <TechnologyNuxt />
+          <TechnologyNode />
+          <TechnologyFlutter />
+          <TechnologyLaravel />
+          <TechnologyNuxt />
+          <TechnologyNode />
+          <TechnologyFlutter />
+          <TechnologyLaravel />
+          <TechnologyNuxt />
+          <TechnologyNode />
+          <TechnologyFlutter />
+          <TechnologyLaravel />
+          <TechnologyNuxt />
+          <TechnologyNode />
+          <TechnologyFlutter />
         </ul>
       </Section>
       <Section
@@ -42,13 +59,10 @@
         description="Todas estas son las technologías con la cueles me desenvuelvo bien"
       >
         <ul class="filters">
-          <Technology
-            v-for="technology in technologies"
-            :key="technology.id"
-            @click="filter.technology_id = technology.id"
-            :class="{ enabled: filter.technology_id == technology.id }"
-            :technology="technology"
-          />
+          <TechnologyLaravel class="animate" />
+          <TechnologyNuxt    class="animate" />
+          <TechnologyNode    class="animate" />
+          <TechnologyFlutter class="animate" />
         </ul>
         <ul class="projects">
           <li v-for="project in projects" :key="project.id">

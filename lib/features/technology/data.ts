@@ -10,12 +10,12 @@ interface ITechnologies {
 }
 
 export const technologies: ITechnologies = {
-  all:     { id: nanoid(), name: 'Todo',    image: 'https://picsum.photos/64/64', },
-  laravel: { id: nanoid(), name: 'Laravel', image: 'https://picsum.photos/64/64', },
-  vue:     { id: nanoid(), name: 'Vue',     image: 'https://picsum.photos/64/64', },
-  nuxt:    { id: nanoid(), name: 'Nuxt',    image: 'https://picsum.photos/64/64', },
-  flutter: { id: nanoid(), name: 'Flutter', image: 'https://picsum.photos/64/64', },
-  node:    { id: nanoid(), name: 'Node',    image: 'https://picsum.photos/64/64', },
+  all:     { id: nanoid(), name: 'Todo',   },
+  laravel: { id: nanoid(), name: 'Laravel' },
+  vue:     { id: nanoid(), name: 'Vue',    },
+  nuxt:    { id: nanoid(), name: 'Nuxt',   },
+  flutter: { id: nanoid(), name: 'Flutter' },
+  node:    { id: nanoid(), name: 'Node',   },
 }
 
 
