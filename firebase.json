@@ -1,7 +1,7 @@
 {
   "hosting": {
     "target": "x-cv-elpandev",
-    "public": "static",
+    "public": ".output/public",
     "ignore": [
       "firebase.json",
       "**/.*",
