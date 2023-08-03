@@ -4,48 +4,24 @@ import { technologies } from "~/lib/features/technology/data"
 const projects: IProject[] = [
   {
     id: nanoid(),
-    name: 'Project 1',
-    description: 'Project 1',
-    image: 'https://picsum.photos/400/600',
-    github: '',
-    url: '',
-    technologies: [
-      technologies.laravel
-    ]
-  },
-  {
-    id: nanoid(),
-    name: 'Project 2',
-    description: 'Project 1',
-    image: 'https://picsum.photos/480/640',
-    github: '',
-    url: '',
-    technologies: [
-      technologies.laravel
-    ]
-  },
-  {
-    id: nanoid(),
-    name: 'Walia',
+    name: 'LinkedIn',
     description: '',
-    image: '/images/walia.webp',
+    image: '/images/linkedin.png',
     github: '',
-    url: 'https://play.google.com/store/apps/details?id=com.elpandev.walia',
+    url: 'https://elpandev.github.io/nuxt_linkedin/',
     technologies: [
-      technologies.flutter,
-      technologies.node,
+      technologies.nuxt,
     ]
   },
   {
     id: nanoid(),
-    name: 'Sinappsis',
+    name: 'Smart Contracts',
     description: '',
-    image: '/images/sinappsis.webp',
+    image: '/images/smart_contracts.png',
     github: '',
-    url: 'https://play.google.com/store/apps/details?id=com.ELPANDEV.sinappsis',
+    url: 'https://www.dce.todo.legal/',
     technologies: [
-      technologies.flutter,
-      technologies.node,
+      technologies.nuxt
     ]
   },
   {
@@ -69,7 +45,6 @@ const projects: IProject[] = [
     url: 'https://play.google.com/store/apps/details?id=com.elpandev.periodic_table_quiz',
     technologies: [
       technologies.flutter,
-      technologies.node,
     ]
   },
   {
@@ -81,7 +56,41 @@ const projects: IProject[] = [
     url: 'https://play.google.com/store/apps/details?id=com.elpandev.hourwork',
     technologies: [
       technologies.flutter,
+    ]
+  },
+  {
+    id: nanoid(),
+    name: 'Sinappsis',
+    description: '',
+    image: '/images/sinappsis.webp',
+    github: '',
+    url: 'https://play.google.com/store/apps/details?id=com.ELPANDEV.sinappsis',
+    technologies: [
+      technologies.flutter,
+    ]
+  },
+  {
+    id: nanoid(),
+    name: 'Walia',
+    description: '',
+    image: '/images/walia.webp',
+    github: '',
+    url: 'https://play.google.com/store/apps/details?id=com.elpandev.walia',
+    technologies: [
+      technologies.flutter,
+    ]
+  },
+  {
+    id: nanoid(),
+    name: 'Xide SC',
+    description: '',
+    image: '/images/xide_sc.png',
+    github: '',
+    url: 'https://xide.academy/',
+    technologies: [
+      technologies.nuxt,
       technologies.node,
+      technologies.flutter,
     ]
   },
   {
@@ -93,7 +102,19 @@ const projects: IProject[] = [
     url: 'https://play.google.com/store/apps/details?id=com.ElPaN.MegaQuizDeAnatomiaHumana',
     technologies: [
       technologies.flutter,
+    ]
+  },
+  {
+    id: nanoid(),
+    name: 'Learning Bride Academy',
+    description: '',
+    image: '/images/learning_bridge_academy.png',
+    github: '',
+    url: 'https://learningbridge.academy',
+    technologies: [
+      technologies.nuxt,
       technologies.node,
+      technologies.flutter,
     ]
   },
 ]
