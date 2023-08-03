@@ -35,7 +35,7 @@ import { technologies } from "~/lib/features/technology/data";
         <Section
           class="stacks"
           name="Tecnologías"
-          description="Todas estas son las technologías con las que he desarrollado durante toda mi carrera"
+          description="Tecnologías con las que he desarrollado durante toda mi carrera y con las que considero tener un seniority alto"
         >
           <ul>
             <TechnologyLaravel />
@@ -60,7 +60,7 @@ import { technologies } from "~/lib/features/technology/data";
         <Section
           class="projects"
           name="Proyectos"
-          description="Todas estas son las technologías con la cueles me desenvuelvo bien"
+          description="Todas las aplicaciones que he desarrollado desde el 2016"
         >
           <ul class="filters">
             <TechnologyLaravel class="animate" :class="{ enabled: filter.technology_id == technologies.laravel.id }" @click="change_technology(technologies.laravel)" />
