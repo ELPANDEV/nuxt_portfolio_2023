@@ -82,6 +82,17 @@ const projects: IProject[] = [
   },
   {
     id: nanoid(),
+    name: 'TS Validator',
+    description: '',
+    image: '/images/ts_validator.png',
+    github: '',
+    url: 'https://www.npmjs.com/package/@elpandev/laravel-validator',
+    technologies: [
+      technologies.ts,
+    ]
+  },
+  {
+    id: nanoid(),
     name: 'Xide SC',
     description: '',
     image: '/images/xide_sc.png',

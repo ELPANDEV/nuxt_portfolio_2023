@@ -66,6 +66,7 @@ import { technologies } from "~/lib/features/technology/data";
             <TechnologyNuxt    class="animate" :class="{ enabled: filter.technology_id == technologies.nuxt.id }"    @click="change_technology(technologies.nuxt)"/>
             <TechnologyNode    class="animate" :class="{ enabled: filter.technology_id == technologies.node.id }"    @click="change_technology(technologies.node)"/>
             <TechnologyFlutter class="animate" :class="{ enabled: filter.technology_id == technologies.flutter.id }" @click="change_technology(technologies.flutter)"/>
+            <TechnologyTs      class="animate" :class="{ enabled: filter.technology_id == technologies.ts.id }"      @click="change_technology(technologies.ts)"/>
           </ul>
           <ul class="projects">
             <li v-for="project in projects" :key="project.id">
