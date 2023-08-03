@@ -23,6 +23,7 @@
     }
   }
   &.projects {
+    overflow-y: scroll;
     .filters {
       display: flex;
       flex-wrap: wrap;

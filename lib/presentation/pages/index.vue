@@ -65,7 +65,9 @@ import { technologies } from "~/lib/features/technology/data";
         </ul>
         <ul class="projects">
           <li v-for="project in projects" :key="project.id">
-            <Project :project="project" />
+            <a :href="project.url" target="_blank">
+              <Project :project="project" />
+            </a>
           </li>
         </ul>
       </Section>
