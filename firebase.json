@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "target": "x-cv-elpandev",
+    "public": "static",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+}

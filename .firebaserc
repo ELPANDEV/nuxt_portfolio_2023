@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "x-elpandev"
+  },
+  "targets": {
+    "x-elpandev": {
+      "hosting": {
+        "x-cv-elpandev": [
+          "x-cv-elpandev"
+        ]
+      }
+    }
+  }
+}
