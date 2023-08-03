@@ -15,40 +15,47 @@
 </script>
 
 <template>
-  <main class="x-index">
-    <Profile />
-    <Section
-      class="stacks"
-      name="Tecnologías"
-      description="Todas estas son las technologías con las que he desarrollado durante toda mi carrera"
-    >
-      <ul>
-        <Technology
-          v-for="technology in technologies"
-          :key="technology.id"
-          :technology="technology"
-        />
-      </ul>
-    </Section>
-    <Section
-      class="projects"
-      name="Proyectos"
-      description="Todas estas son las technologías con la cueles me desenvuelvo bien"
-    >
-      <ul class="filters">
-        <Technology
-          v-for="technology in technologies"
-          :key="technology.id"
-          @click="filter.technology_id = technology.id"
-          :class="{ enabled: filter.technology_id == technology.id }"
-          :technology="technology"
-        />
-      </ul>
-      <ul class="projects">
-        <li v-for="project in projects" :key="project.id">
-          <Project :project="project" />
-        </li>
-      </ul>
-    </Section>
-  </main>
+  <Pager>
+    <template #buttons>
+      <PagerButton name="Presentación" />
+      <PagerButton name="Tecnologías" />
+      <PagerButton name="Proyectos" />
+    </template>
+    <template #elements>
+      <Profile />
+      <Section
+        class="stacks"
+        name="Tecnologías"
+        description="Todas estas son las technologías con las que he desarrollado durante toda mi carrera"
+      >
+        <ul>
+          <Technology
+            v-for="technology in technologies"
+            :key="technology.id"
+            :technology="technology"
+          />
+        </ul>
+      </Section>
+      <Section
+        class="projects"
+        name="Proyectos"
+        description="Todas estas son las technologías con la cueles me desenvuelvo bien"
+      >
+        <ul class="filters">
+          <Technology
+            v-for="technology in technologies"
+            :key="technology.id"
+            @click="filter.technology_id = technology.id"
+            :class="{ enabled: filter.technology_id == technology.id }"
+            :technology="technology"
+          />
+        </ul>
+        <ul class="projects">
+          <li v-for="project in projects" :key="project.id">
+            <Project :project="project" />
+          </li>
+        </ul>
+      </Section>
+    </template>
+  </Pager>
 </template>
